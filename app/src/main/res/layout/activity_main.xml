@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+        <TextView
+                android:id="@+id/send_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="SendMessage"
+                android:padding="20dip"
+                android:gravity="center"
+                android:background="#cccccc"
+                android:textColor="#000000"
+                />
+
+        <TextView
+                android:id="@+id/canvas_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:textSize="19sp"
+                android:textColor="#999999"
+                android:background="#cccccc"
+                android:padding="10dip"
+                android:gravity="center"
+                android:text="Activity custom draw"
+                />
+
+        <TextView
+                android:id="@+id/camera_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:textSize="19sp"
+                android:textColor="#999999"
+                android:background="#cccccc"
+                android:padding="10dip"
+                android:gravity="center"
+                android:text="camera permission..."
+                />
+
+        <TextView
+                android:id="@+id/toast_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:textSize="19sp"
+                android:textColor="#999999"
+                android:background="#cccccc"
+                android:padding="10dip"
+                android:gravity="center"
+                android:text="Toast"
+                />
+
+        <TextView
+                android:id="@+id/time_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:textSize="19sp"
+                android:textColor="#999999"
+                android:background="#cccccc"
+                android:padding="10dip"
+                android:gravity="center"
+                android:text="Time"
+                />
+
+        <TextView
+                android:id="@+id/time_surface_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:textSize="19sp"
+                android:textColor="#999999"
+                android:background="#cccccc"
+                android:padding="10dip"
+                android:gravity="center"
+                android:text="TimeSurface"
+                />
+
+        <TextView
+                android:id="@+id/animation_move_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:textSize="19sp"
+                android:textColor="#999999"
+                android:background="#cccccc"
+                android:padding="10dip"
+                android:gravity="center"
+                android:text="Animation Move ..."
+                />
+
+        <TextView
+                android:id="@+id/draw_bitmap_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:textSize="19sp"
+                android:textColor="#999999"
+                android:background="#cccccc"
+                android:padding="10dip"
+                android:gravity="center"
+                android:text="DrawBitmap..."
+                />
+
+        <TextView
+                android:id="@+id/too_inner_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:textSize="19sp"
+                android:textColor="#999999"
+                android:background="#cccccc"
+                android:padding="10dip"
+                android:gravity="center"
+                android:text="Test Request URL"
+                />
+
+        <TextView
+                android:id="@+id/web_view_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:textSize="19sp"
+                android:textColor="#999999"
+                android:background="#cccccc"
+                android:padding="10dip"
+                android:gravity="center"
+                android:text="DownLoad webView..."
+                />
+    </LinearLayout>
+</ScrollView>
