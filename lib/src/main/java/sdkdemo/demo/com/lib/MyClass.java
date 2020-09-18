@@ -41,7 +41,8 @@ public class MyClass {
 //        new ThreeNumNearSum().solution();
 //        new ThreeNumSum().solution();
 //        new LetterCombinations().solution();
-        new DeleteLinkLastNode().solution();
+//        new DeleteLinkLastNode().solution();
+        new BracketsValidMethod().solution();
     }
 
     private static void s(){

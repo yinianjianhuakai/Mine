@@ -19,7 +19,7 @@ public class DeleteLinkLastNode {
 //        ListNode node = removeNthFromEnd(head, 2);
 //        System.out.println("node : " + node.toString());
 
-        System.out.println("node : " + revertNode(head));
+        System.out.println("node : " + revertNode2(head));
     }
 
     //移除单链表的倒数第n个
@@ -48,10 +48,10 @@ public class DeleteLinkLastNode {
 
     //反转
     private ListNode revertNode(ListNode head) {
-        if (head == null || head.next == null){
+        if (head == null || head.next == null) {
             return head;
         }
-        ListNode next = head.next;
+        ListNode next     = head.next;
         ListNode head_new = revertNode(next);
         next.next = head;
         head.next = null;
@@ -59,17 +59,26 @@ public class DeleteLinkLastNode {
         return head_new;
     }
 
-//    private ListNode revertNode(ListNode head) {
-//        ListNode dummy = new ListNode(0);
-//
-//        ListNode first = head;
-//        while (first.next != null) {
-//            first = first.next;
-//        }
-//
-//        return dummy.next = first;
-//
-//    }
+    private ListNode revertNode2(ListNode head) {
+        if (head == null) {
+            return head;
+        }
+
+        ListNode pre = head;
+        ListNode cur = head.next;
+        ListNode temp;
+        while (cur != null) {
+            temp = cur.next;
+            cur.next = pre;
+
+            pre = cur;
+            cur = temp;
+        }
+
+        head.next = null;
+
+        return pre;
+    }
 
     private class ListNode {
         int      val;
