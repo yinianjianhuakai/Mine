@@ -13,8 +13,10 @@ public class BracketsValidMethod {
         String s = "()[]{}";
 //        String  s    = "([{}])";
 //        String  s    = "[(])";
-        boolean flag = isValid1(s);
-        System.out.println("flag : " + flag);
+//        boolean flag = isValid1(s);
+//        System.out.println("flag : " + flag);
+
+        System.out.println(generateParenthesis(2));
     }
 
     public boolean isValid(String s) {
@@ -79,65 +81,45 @@ public class BracketsValidMethod {
         return s.isEmpty();
     }
 
-    public boolean isValid2(String s) {
-        if (s == null) {
-            return false;
-        }
-        if (s.isEmpty()) {
-            return true;
-        }
+//    public List<String> generateParenthesis(int n) {
+//        List<String>  list  = new ArrayList<>();
+//        Stack<String> stack = new Stack<>();
+//        for (int i = 0; i < n; i++) {
+//            stack.push("(");
+//        }
+//
+//        for (int i = 0; i < n; i++) {
+//            for (int j = i + 1; j < n; j++) {
+//
+//            }
+//        }
+//
+//        return list;
+//    }
 
-        if (s.length() % 2 == 1) {
-            return false;
+    List<String> res = new ArrayList<>();
+    public List<String> generateParenthesis(int n) {
+        if(n <= 0){
+            return res;
         }
-
-        List<Character> leftList  = new ArrayList<>();
-        List<Character> rightList = new ArrayList<>();
-        int             length    = s.length();
-        int             middle    = length >> 1;
-        for (int i = 0; i < length; i++) {
-            char c = s.charAt(i);
-            if (i < middle) {
-                leftList.add(c);
-            } else {
-                rightList.add(c);
-            }
-        }
-
-        for (int i = 0; i < leftList.size(); i++) {
-            boolean flag = true;
-            if (inverseBrackets(leftList.get(i)) != rightList.get(rightList.size() - i - 1)) {
-                flag = false;
-            }
-            return flag;
-        }
-
-        return false;
+        getParenthesis("",n,n);
+        return res;
     }
 
-    private char inverseBrackets(char c) {
-        char tempChar = 0;
-        switch (c) {
-            case '(':
-                tempChar = ')';
-                break;
-            case ')':
-                tempChar = '(';
-                break;
-            case '[':
-                tempChar = ']';
-                break;
-            case ']':
-                tempChar = '[';
-                break;
-            case '{':
-                tempChar = '}';
-                break;
-            case '}':
-                tempChar = '{';
-                break;
-
+    private void getParenthesis(String str,int left, int right) {
+        if(left == 0 && right == 0 ){
+            res.add(str);
+            return;
         }
-        return tempChar;
+        if(left == right){
+            //剩余左右括号数相等，下一个只能用左括号
+            getParenthesis(str+"(",left-1,right);
+        }else if(left < right){
+            //剩余左括号小于右括号，下一个可以用左括号也可以用右括号
+            if(left > 0){
+                getParenthesis(str+"(",left-1,right);
+            }
+            getParenthesis(str+")",left,right-1);
+        }
     }
 }

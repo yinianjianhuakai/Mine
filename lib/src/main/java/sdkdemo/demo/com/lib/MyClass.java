@@ -42,7 +42,11 @@ public class MyClass {
 //        new ThreeNumSum().solution();
 //        new LetterCombinations().solution();
 //        new DeleteLinkLastNode().solution();
-        new BracketsValidMethod().solution();
+//        new BracketsValidMethod().solution();
+//        new NineEightMethod().solution();
+//        EightNumPath.solution();
+//        new DivideMethod().solution();
+        new SubstringMethod().solution();
     }
 
     private static void s(){
