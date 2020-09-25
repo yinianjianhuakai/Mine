@@ -46,7 +46,9 @@ public class MyClass {
 //        new NineEightMethod().solution();
 //        EightNumPath.solution();
 //        new DivideMethod().solution();
-        new SubstringMethod().solution();
+//        new SubstringMethod().solution();
+//        new SudokuMethod().solution();
+        new SudokuFillMethod().solution();
     }
 
     private static void s(){

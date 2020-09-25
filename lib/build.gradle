@@ -1,10 +1,15 @@
 apply plugin: 'java'
 apply plugin: 'application'
 mainClassName = 'java.MainRun'
-
+apply plugin: 'idea'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 }
 
 sourceCompatibility = "7"
 targetCompatibility = "7"
+
+tasks.withType(JavaCompile) {
+    compileTask -> compileTask.dependsOn tasks.findByName('idea')
+        options.encoding = "UTF-8"
+}
