@@ -25,7 +25,7 @@ public class MoveFrameLayout extends FrameLayout {
 
     private RectF mStartRectF;
     private RectF mEndRectF;
-    private long mLastMillis;
+    private long  mLastMillis;
 
     private Handler mHandler = new Handler() {
         public void handleMessage(Message msg) {
@@ -95,10 +95,7 @@ public class MoveFrameLayout extends FrameLayout {
         mEndRectF = new RectF(endView.getLeft(), endView.getTop(), endView.getRight(), endView.getBottom());
         setViewResultParams(mStartRectF);
         mLastMillis = System.currentTimeMillis();
-        Message msg = mHandler.obtainMessage();
-        msg.what = TAG_START_MOVE;
-        msg.obj = mStartRectF;
-        mHandler.sendMessageDelayed(msg, DURATION_STAY_MILLIS);
+        mHandler.sendEmptyMessageDelayed(TAG_START_MOVE, DURATION_STAY_MILLIS);
     }
 
     private void setViewResultParams(RectF rectF) {
