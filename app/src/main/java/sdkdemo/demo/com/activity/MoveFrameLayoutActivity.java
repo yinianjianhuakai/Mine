@@ -7,7 +7,7 @@ import sdkdemo.demo.com.myapplicatione.R;
 import sdkdemo.demo.com.view.MoveFrameLayout;
 
 /**
- * Created by  sjx  on 2020/9/28
+ * Created by  sjx  on 2020/9/29
  */
 public class MoveFrameLayoutActivity extends Activity implements View.OnClickListener {
 
