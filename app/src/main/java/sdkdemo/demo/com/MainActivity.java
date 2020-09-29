@@ -88,6 +88,13 @@ public class MainActivity extends Activity implements OnRxEventListener {
             }
         });
 
+        findViewById(R.id.frame_move_id).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MoveFrameLayoutActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
         findViewById(R.id.draw_bitmap_id).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, DrawBitmapActivity.class);

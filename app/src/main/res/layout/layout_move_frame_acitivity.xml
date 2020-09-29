@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <sdkdemo.demo.com.view.MoveFrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            >
+
+        <TextView
+                android:id="@+id/one_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dip"
+                android:text="123"
+                android:textColor="#ffffff"
+                android:layout_margin="20dip"
+                android:background="#cccccc"/>
+
+        <TextView
+                android:id="@+id/two_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dip"
+                android:text="123456789132456789"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="200dip"
+                android:layout_marginTop="300dip"
+                android:background="#cccccc"/>
+
+    </sdkdemo.demo.com.view.MoveFrameLayout>
+
+    <TextView
+            android:id="@+id/animation_move_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dip"
+            android:layout_margin="30dip"
+            android:background="#cccccc"
+            android:text="MOVE..."
+            />
+
+</LinearLayout>
