@@ -5,16 +5,17 @@ import android.os.Bundle;
 import android.view.View;
 import sdkdemo.demo.com.myapplicatione.R;
 import sdkdemo.demo.com.view.MoveFrameLayout;
+import sdkdemo.demo.com.view.MoveFrameLayout2;
 
 /**
  * Created by  sjx  on 2020/9/29
  */
 public class MoveFrameLayoutActivity extends Activity implements View.OnClickListener {
 
-    MoveFrameLayout frame_layout;
-    View            oneView;
-    View            twoView;
-    boolean flag = true;
+    MoveFrameLayout2 frame_layout;
+    View             oneView;
+    View             twoView;
+    boolean          flag = true;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

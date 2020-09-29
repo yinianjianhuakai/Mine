@@ -6,7 +6,7 @@
         android:orientation="vertical"
         >
 
-    <sdkdemo.demo.com.view.MoveFrameLayout
+    <sdkdemo.demo.com.view.MoveFrameLayout2
             android:id="@+id/frame_layout"
             android:layout_width="match_parent"
             android:layout_height="0dip"
@@ -30,11 +30,11 @@
                 android:padding="15dip"
                 android:text="123456789132456789"
                 android:textColor="#ffffff"
-                android:layout_marginLeft="200dip"
+                android:layout_marginLeft="180dip"
                 android:layout_marginTop="300dip"
                 android:background="#cccccc"/>
 
-    </sdkdemo.demo.com.view.MoveFrameLayout>
+    </sdkdemo.demo.com.view.MoveFrameLayout2>
 
     <TextView
             android:id="@+id/animation_move_id"
