@@ -48,7 +48,12 @@ public class MyClass {
 //        new DivideMethod().solution();
 //        new SubstringMethod().solution();
 //        new SudokuMethod().solution();
-        new SudokuFillMethod().solution();
+//        new SudokuFillMethod().solution();
+//        new CustomThreadExecutor().doThread();
+//        new CustomBlockingQueueTest().doTask1();
+        new CustomLinkedBlockingQueueTest().doMethod();
+//        new TestExecutorShutDown().doMethod();
+//        new TestThreadInterruptMethod().doMethod();
     }
 
     private static void s(){
