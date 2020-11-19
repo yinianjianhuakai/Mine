@@ -48,6 +48,10 @@
                 android:name="sdkdemo.demo.com.activity.MoveFrameLayoutActivity"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar"
                 />
+        <activity
+                android:name="sdkdemo.demo.com.activity.ProgressBarActivity"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+                />
     </application>
 
 </manifest>

@@ -51,9 +51,10 @@ public class MyClass {
 //        new SudokuFillMethod().solution();
 //        new CustomThreadExecutor().doThread();
 //        new CustomBlockingQueueTest().doTask1();
-        new CustomLinkedBlockingQueueTest().doMethod();
+//        new CustomLinkedBlockingQueueTest().doMethod();
 //        new TestExecutorShutDown().doMethod();
 //        new TestThreadInterruptMethod().doMethod();
+
     }
 
     private static void s(){

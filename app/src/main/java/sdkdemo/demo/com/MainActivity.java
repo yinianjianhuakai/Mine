@@ -111,7 +111,30 @@ public class MainActivity extends Activity implements OnRxEventListener {
 
         findViewById(R.id.web_view_id).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, CustomWebViewActivity.class);
+//                Intent intent = new Intent(MainActivity.this, CustomWebViewActivity.class);
+//                MainActivity.this.startActivity(intent);
+                try{
+                    System.out.println(Double.parseDouble(null));
+
+                }catch (Exception e){
+//                    e.printStackTrace();
+                    String errmsg = e.getMessage();
+                    if (e.getStackTrace().length > 0) {
+                        for (int i = 0; i < e.getStackTrace().length; i++) {
+                            errmsg += " \r\n " + e.getStackTrace()[i].toString();
+                        }
+                    }
+                    Log.i("Test", errmsg);
+
+                    Log.i("Test","---------------");
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        findViewById(R.id.progress_bar_id).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ProgressBarActivity.class);
                 MainActivity.this.startActivity(intent);
             }
         });

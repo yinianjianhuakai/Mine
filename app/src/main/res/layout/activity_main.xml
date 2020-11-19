@@ -153,5 +153,18 @@
                 android:gravity="center"
                 android:text="DownLoad webView..."
                 />
+
+        <TextView
+                android:id="@+id/progress_bar_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:textSize="19sp"
+                android:textColor="#999999"
+                android:background="#cccccc"
+                android:padding="10dip"
+                android:gravity="center"
+                android:text="Progress Bar..."
+                />
     </LinearLayout>
 </ScrollView>
